@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本テンプレート</title>
+    <style>
+        /* リセットCSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* メイン */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #4A90E2;
+        }
+
+        /* 特徴セクション */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .feature {
+            flex: 0 0 calc(33.333% - 20px);
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #4A90E2;
+        }
+
+        /* CTAセクション */
+        .cta {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #3A80D2;
+        }
+
+        /* フッター */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer p {
+            margin-bottom: 20px;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .feature {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>あなたの製品・サービス名</h1>
+        <p>魅力的なキャッチコピーをここに入れます。ユーザーの注目を集め、興味を引くような文章を書きましょう。</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>製品・サービスの特徴</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="特徴1">
+                    <h3>特徴1</h3>
+                    <p>この特徴がユーザーにもたらす具体的なメリットについて説明します。どのように問題を解決するのかを明確に伝えましょう。</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="特徴2">
+                    <h3>特徴2</h3>
+                    <p>この特徴がユーザーにもたらす具体的なメリットについて説明します。どのように問題を解決するのかを明確に伝えましょう。</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="特徴3">
+                    <h3>特徴3</h3>
+                    <p>この特徴がユーザーにもたらす具体的なメリットについて説明します。どのように問題を解決するのかを明確に伝えましょう。</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>お客様の声</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="顧客1">
+                    <h3>顧客名1</h3>
+                    <p>「この製品・サービスを利用して得られた具体的な成果や感想を書きます。信頼性を高めるために、実際の顧客の声を使用しましょう。」</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="顧客2">
+                    <h3>顧客名2</h3>
+                    <p>「この製品・サービスを利用して得られた具体的な成果や感想を書きます。信頼性を高めるために、実際の顧客の声を使用しましょう。」</p>
+                </div>
+                <div class="feature">
+                    <img src="https://via.placeholder.com/80" alt="顧客3">
+                    <h3>顧客名3</h3>
+                    <p>「この製品・サービスを利用して得られた具体的な成果や感想を書きます。信頼性を高めるために、実際の顧客の声を使用しましょう。」</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>今すぐ始めましょう</h2>
+            <p>製品・サービスを利用するメリットを再度強調し、行動を促す文章を書きます。限定オファーや特典があれば、ここで紹介しましょう。</p>
+            <a href="#" class="button">無料で試してみる</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 あなたの会社名. All rights reserved.</p>
+    </footer>
+</body>
+</html>
