@@ -35,6 +35,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('landing-pages.index') }}">{{ __('LP管理') }}</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('prompts.index') }}">{{ __('プロンプト生成') }}</a>
+                            </li>
                         @endauth
                     </ul>
 

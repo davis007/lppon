@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LandingPageMetricController;
+use App\Http\Controllers\PromptController;
 use App\Http\Controllers\Api\LandingPageMetricApiController;
 
 Route::get('/', function () {
@@ -25,6 +26,9 @@ Route::middleware(['auth'])->group(function () {
         ->name('landing-pages.metrics.index');
     Route::get('landing-pages/{landing_page}/metrics/{metric}', [LandingPageMetricController::class, 'show'])
         ->name('landing-pages.metrics.show');
+
+    // プロンプト生成
+    Route::resource('prompts', PromptController::class);
 });
 
 // 公開されたLPを表示するためのルート（認証不要）
