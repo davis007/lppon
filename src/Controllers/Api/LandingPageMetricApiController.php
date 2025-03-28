@@ -1,11 +1,11 @@
 <?php
 
-namespace YourUsername\LandingPageManager\Controllers\Api;
+namespace David007\LandingPageManager\Controllers\Api;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use YourUsername\LandingPageManager\Models\LandingPage;
-use YourUsername\LandingPageManager\Models\LandingPageMetric;
+use David007\LandingPageManager\Models\LandingPage;
+use David007\LandingPageManager\Models\LandingPageMetric;
 
 class LandingPageMetricApiController extends Controller
 {

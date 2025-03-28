@@ -1,10 +1,10 @@
 <?php
 
-namespace YourUsername\LandingPageManager\Controllers;
+namespace David007\LandingPageManager\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use YourUsername\LandingPageManager\Models\LandingPage;
+use David007\LandingPageManager\Models\LandingPage;
 
 class LandingPageController extends Controller
 {
@@ -54,7 +54,7 @@ class LandingPageController extends Controller
     /**
      * ランディングページの詳細を表示
      *
-     * @param  \YourUsername\LandingPageManager\Models\LandingPage  $landingPage
+     * @param  \David007\LandingPageManager\Models\LandingPage  $landingPage
      * @return \Illuminate\View\View
      */
     public function show(LandingPage $landingPage)
@@ -65,7 +65,7 @@ class LandingPageController extends Controller
     /**
      * ランディングページ編集フォームを表示
      *
-     * @param  \YourUsername\LandingPageManager\Models\LandingPage  $landingPage
+     * @param  \David007\LandingPageManager\Models\LandingPage  $landingPage
      * @return \Illuminate\View\View
      */
     public function edit(LandingPage $landingPage)
@@ -77,7 +77,7 @@ class LandingPageController extends Controller
      * ランディングページを更新
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \YourUsername\LandingPageManager\Models\LandingPage  $landingPage
+     * @param  \David007\LandingPageManager\Models\LandingPage  $landingPage
      * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, LandingPage $landingPage)
@@ -99,7 +99,7 @@ class LandingPageController extends Controller
     /**
      * ランディングページを削除
      *
-     * @param  \YourUsername\LandingPageManager\Models\LandingPage  $landingPage
+     * @param  \David007\LandingPageManager\Models\LandingPage  $landingPage
      * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(LandingPage $landingPage)

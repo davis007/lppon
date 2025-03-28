@@ -1,6 +1,6 @@
 <?php
 
-namespace YourUsername\LandingPageManager\Providers;
+namespace David007\LandingPageManager\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use YourUsername\LandingPageManager\Http\Controllers\LandingPageController;
-use YourUsername\LandingPageManager\Http\Controllers\LandingPageMetricController;
-use YourUsername\LandingPageManager\Http\Controllers\LandingPageMetricApiController;
+use David007\LandingPageManager\Controllers\LandingPageController;
+use David007\LandingPageManager\Controllers\LandingPageMetricController;
+use David007\LandingPageManager\Controllers\LandingPageMetricApiController;
 
 /*
 |--------------------------------------------------------------------------

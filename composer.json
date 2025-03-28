@@ -1,17 +1,17 @@
 {
-    "name": "your-username/landing-page-manager",
+    "name": "david007/landing-page-manager",
     "description": "Landing page management package for Laravel applications",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "YourUsername\\LandingPageManager\\": "src/"
+            "David007\\LandingPageManager\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Your Name",
-            "email": "your.email@example.com"
+            "name": "David007",
+            "email": "david007@example.com"
         }
     ],
     "minimum-stability": "dev",
@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "YourUsername\\LandingPageManager\\Providers\\LandingPageServiceProvider"
+                "David007\\LandingPageManager\\Providers\\LandingPageServiceProvider"
             ]
         }
     }
