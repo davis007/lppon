@@ -27,8 +27,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('landing-pages/{landing_page}/metrics/{metric}', [LandingPageMetricController::class, 'show'])
         ->name('landing-pages.metrics.show');
 
-    // プロンプト生成
-    Route::resource('prompts', PromptController::class);
 });
 
 // 公開されたLPを表示するためのルート（認証不要）

@@ -1,0 +1,42 @@
+{
+    "name": "yourusername/landing-page-manager",
+    "description": "Landing Page Management Package for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "illuminate/database": "^8.0|^9.0|^10.0",
+        "illuminate/http": "^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0|^7.0|^8.0",
+        "phpunit/phpunit": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourUsername\\LandingPageManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YourUsername\\LandingPageManager\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YourUsername\\LandingPageManager\\Providers\\LandingPageServiceProvider"
+            ]
+        }
+    }
+}
+
