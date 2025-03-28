@@ -1,6 +1,6 @@
 <?php
 
-namespace YourUsername\LandingPageManager\Models;
+namespace Davis007\LandingPageManager\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

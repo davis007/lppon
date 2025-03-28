@@ -1,18 +1,18 @@
 <?php
 
-namespace YourUsername\LandingPageManager\Controllers;
+namespace Davis007\LandingPageManager\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use YourUsername\LandingPageManager\Models\LandingPage;
-use YourUsername\LandingPageManager\Models\LandingPageMetric;
+use Davis007\LandingPageManager\Models\LandingPage;
+use Davis007\LandingPageManager\Models\LandingPageMetric;
 
 class LandingPageMetricController extends Controller
 {
     /**
      * 指定されたランディングページのメトリクス一覧を表示
      *
-     * @param  \YourUsername\LandingPageManager\Models\LandingPage  $landingPage
+     * @param  \Davis007\LandingPageManager\Models\LandingPage  $landingPage
      * @return \Illuminate\View\View
      */
     public function index(LandingPage $landingPage)
@@ -24,8 +24,8 @@ class LandingPageMetricController extends Controller
     /**
      * 指定されたランディングページの指定メトリクスの詳細を表示
      *
-     * @param  \YourUsername\LandingPageManager\Models\LandingPage  $landingPage
-     * @param  \YourUsername\LandingPageManager\Models\LandingPageMetric  $metric
+     * @param  \Davis007\LandingPageManager\Models\LandingPage  $landingPage
+     * @param  \Davis007\LandingPageManager\Models\LandingPageMetric  $metric
      * @return \Illuminate\View\View
      */
     public function show(LandingPage $landingPage, LandingPageMetric $metric)
